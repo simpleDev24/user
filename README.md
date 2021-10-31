@@ -10,11 +10,16 @@ First time git (bash) setup on windows 11 machine
 	(note 1: if you hit list command before configuring any property you might get error -- fatal: unable to read config file 'C:/Users/kanad/.gitconfig': No such file or directory)
 	(note 2: you can also choose to manually create above mentioned empty .gitconfig file on above mentioned location. And then execute commands to set properties)
 
+------------------------------------
 
 - create an empty repository on git hub
 - create a directory with same name on your local machine
 - put some code or test files in that directory
 - execute below git command
-git remote add origin https://github.com/simpleDev24/user.git
+git init
+git status
+git add .
+git commit -m 'first commit'
 git branch -M master
+git remote add origin https://github.com/simpleDev24/user.git
 git push -u origin master
